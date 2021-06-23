@@ -42,7 +42,7 @@ function CartScreen({ match, location, history }) {
                             <ListGroup.Item key={item.product}>
                                 <Row>
                                     <Col md={2}>
-                                        <Image src={item.image} alt={item.name} fluid rounder />
+                                        <Image src={item.image} alt={item.name} fluid rounded />
                                     </Col>
                                     <Col md={3}>
                                         <Link to={`/product/${item.product}`}>{item.name}</Link>
@@ -94,7 +94,7 @@ function CartScreen({ match, location, history }) {
                           type='button'
                           className='btn-block'
                           disabled={cartItems.length === 0}
-                          conClick={checkoutHandler}
+                          onClick={checkoutHandler}
                         >
                             Proceed To Checkout
                         </Button>
